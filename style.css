@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    overflow: hidden;
+    overflow-x: hidden;
     background-image: url(bg.jpg);
 }
 #main{
@@ -24,12 +24,12 @@ body{
     text-transform: uppercase;
 }
 #nav #First{
-    font-size: 25px;
+    /* font-size: 25px; */
     font-weight: 400;
     color: rgb(0, 0, 0);
 }
 #Second{
-     font-size: 25px;
+     /* font-size: 25px; */
     font-weight: 400;
     color: red;
 }
@@ -101,4 +101,68 @@ body{
     border: 6px solid transparent;
   border-image: linear-gradient(to right, #412394, #3047d8) 1;
     height: 10%;
+}
+/* ---------- RESPONSIVE BREAKPOINTS ---------- */
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+    #nav {
+        grid-template-columns: repeat(4, auto);
+        font-size: 12px;
+    }
+    #page1 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    #text {
+        padding: 0 10px;
+    }
+    #image img {
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+}
+
+/* Mobile screens (≤ 768px) */
+@media (max-width: 768px) {
+    #nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        font-size: 11px;
+    }
+    #page1 {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    #text h1 {
+        padding-left: 0;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    #text p {
+        font-size: 1rem;
+    }
+    #text button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+/* Small phones (≤ 480px) */
+@media (max-width: 480px) {
+    #nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        font-size: 10px;
+    }
+    #text h1 {
+        font-size: 1.5rem;
+    }
+    #text p {
+        font-size: 0.9rem;
+    }
 }
