@@ -39,6 +39,12 @@ body{
     padding: 10px;
     border-radius: 30px;
 }
+#nav h3:hover{
+    color: rgb(148, 9, 153);
+    cursor: pointer;
+    font-size: larger;
+    text-decoration: underline;
+}
 #page1{
     display: grid;
     grid-template-columns: 60% 40%;
