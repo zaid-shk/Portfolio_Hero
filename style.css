@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    /* background:  rgb(32, 30, 30); */
+    /* background-color:; */
+    color: white;
+    background-image: url(bg.jpg);
+/* background: linear-gradient(46deg, rgba(245, 31, 39, 1) 4%, rgba(253, 29, 29, 1) 5%, rgba(56, 41, 18, 1) 79%); */
+}
+#nav{
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: 13% 30% 8% 8% 10% 10% 10% 10%;
+    align-items: center;
+    padding-left: 20px;
+    padding: 30px;
+    text-transform: uppercase;
+}
+#nav #First{
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+#Second{
+     font-size: 25px;
+    font-weight: 400;
+    color: red;
+}
+#hire-me{
+    text-align: center;
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 30px;
+}
+#page1{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+}
+#text{
+    text-align: center;
+    /* border: 2px solid green; */
+}
+#text h1{
+    /* font-size: 50px; */
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 700;
+    margin-top: 20px;
+    padding-left: 270px;
+}
+#text p{
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 50px;
+    margin-top: 90px;
+    /* border: 2px solid green */
+}
+#indx2{
+    color:crimson;
+}
+#image img{
+    margin-top: 55px;
+    margin-left: 30px;
+    align-items: center;
+    border: 6px solid transparent;
+  border-image: linear-gradient(to right, #412394, #3047d8) 1;
+    height: 60%;
+}
