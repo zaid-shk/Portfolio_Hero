@@ -63,6 +63,20 @@ tl.from("#page1 #indx2",{
     scrub:1,
     stagger: 0.3
 })
+tl.from("#page1 #see",{
+    y: -500,
+    opacity: 0,
+    duration: 0.9,
+    scrub:1,
+    stagger: 0.3
+})
+tl.from("#page1 #content",{
+    y: 500,
+    opacity: 0,
+    duration: 0.9,
+    scrub:1,
+    stagger: 0.3
+})
 tl.from("#page1 img",{
     x: -500,
     opacity: 0,
